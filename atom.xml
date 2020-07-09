@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhiwe&#39;s Blog</title>
+  
+  <subtitle>记录学习的技能和遇到的问题</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zhiwe.github.io/"/>
+  <updated>2020-07-08T08:15:18.138Z</updated>
+  <id>https://zhiwe.github.io/</id>
+  
+  <author>
+    <name>zhiwe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zhiwe.github.io/2020/07/08/hello-world/"/>
+    <id>https://zhiwe.github.io/2020/07/08/hello-world/</id>
+    <published>2020-07-08T08:15:18.138Z</published>
+    <updated>2020-07-08T08:15:18.138Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
