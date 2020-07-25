@@ -1,0 +1,1524 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="java语言基础, java, python">
+    <meta name="description" content="zhiweの博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>java语言基础 | Zhiweの博客</title>
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/fairy-tail-icons.ico">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/xuehuapiaoluo.js"></script>
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Zhiweの博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/spiderman.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Zhiweの博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/spiderman.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Zhiweの博客</div>
+        <div class="logo-desc">
+            
+            zhiweの博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/zhiwe/zhiwe.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/zhiwe/zhiwe.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">java语言基础</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" class="post-category">
+                                编程基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-07-10
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <blockquote>
+<p>对于java的一些笔记</p>
+</blockquote>
+<h2 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="内置数据类型"><a href="#内置数据类型" class="headerlink" title="内置数据类型"></a>内置数据类型</h4><ul>
+<li>整数类型(byte、short、int、long)</li>
+<li>浮点类型(float、double)</li>
+<li>布尔类型(boolean)</li>
+<li>字符类型(char)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>类型名称</th>
+<th>占用内存</th>
+<th>取值范围</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整型</td>
+<td>byte</td>
+<td>1字节</td>
+<td>-128（-2^7）~127（2^7-1）</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>short</td>
+<td>2字节</td>
+<td>-32768（-2^15）~32767（2^15 - 1）</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>int</td>
+<td>4字节</td>
+<td>-2,147,483,648（-2^31）~2,147,483,647（2^31 - 1）</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td>long</td>
+<td>8字节</td>
+<td>-9,223,372,036,854,775,808（-2^63）~9,223,372,036,854,775,807（2^63 -1）</td>
+<td>0L</td>
+</tr>
+<tr>
+<td>浮点型</td>
+<td>float</td>
+<td>4字节</td>
+<td>-3.403E38~3.403E38</td>
+<td>0.0f</td>
+</tr>
+<tr>
+<td></td>
+<td>double</td>
+<td>8字节</td>
+<td>-1.798E308~1.798E308</td>
+<td>0.0d</td>
+</tr>
+<tr>
+<td>布尔型</td>
+<td>boolean</td>
+<td>1字节</td>
+<td>true或false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>字符型</td>
+<td>char</td>
+<td>2字节</td>
+<td>表示一个字符</td>
+<td>‘\u0000’</td>
+</tr>
+</tbody></table>
+<h4 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h4><ul>
+<li>类(class)</li>
+<li>接口(interface)</li>
+<li>数组([])</li>
+</ul>
+<h3 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h3><h4 id="类变量"><a href="#类变量" class="headerlink" title="类变量"></a>类变量</h4><ul>
+<li>也称为静态变量，独立于方法之外的变量，用static修饰</li>
+<li>存储在静态存储区，在第一次被访问时创建，程序结束时销毁</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//静态私有变量salary</span>
+<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">double</span> salary<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//常量DEPARTMENT</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> String DEPARTMENT <span class="token operator">=</span> <span class="token string">"开发人员"</span><span class="token punctuation">;</span></code></pre>
+<h4 id="实例变量"><a href="#实例变量" class="headerlink" title="实例变量"></a>实例变量</h4><ul>
+<li>独立于方法之外的变量，没有static修饰</li>
+<li>实例变量声明在一个类中，但在方法、构造方法和语句块之外</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//这个实例变量对子类可见</span>
+<span class="token keyword">public</span> String name<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//私有变量，仅在该类可见</span>
+<span class="token keyword">private</span> <span class="token keyword">double</span> salary<span class="token punctuation">;</span></code></pre>
+<h4 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h4><ul>
+<li>类的方法中的变量，声明在方法、构造方法或者语句块中</li>
+<li>被执行的时候创建，执行完后会被销毁</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//age是一个局部变量。定义在pupAge()方法中，它的作用域就限制在这个方法中</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">pupAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      age <span class="token operator">=</span> age <span class="token operator">+</span> <span class="token number">7</span><span class="token punctuation">;</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"小狗的年龄是: "</span> <span class="token operator">+</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span></code></pre>
+<h3 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h3><ul>
+<li>用来定义类、方法或者变量，通常放在语句的最前端。</li>
+</ul>
+<h4 id="访问控制修饰符"><a href="#访问控制修饰符" class="headerlink" title="访问控制修饰符"></a>访问控制修饰符</h4><ul>
+<li>default:在同一个包内可见，不使用任何修饰符。使用对象：类、接口、变量、方法。</li>
+<li>private:在同一个类内可见。使用对象：变量、方法。不能修饰类。</li>
+<li>public:对所有类可见。使用对象：类、接口、变量、方法。</li>
+<li>protected:对同一包内的类和所有子类可见。使用对象：变量、方法。不能修饰类。</li>
+</ul>
+<h4 id="非访问修饰符"><a href="#非访问修饰符" class="headerlink" title="非访问修饰符"></a>非访问修饰符</h4><ul>
+<li>static:用来声明独立于对象的类方法和类变量，对类变量和方法的访问可以直接使用 classname.variablename 和 classname.methodname 的方式访问。</li>
+<li>final:修饰的类不能被继承，修饰的方法不能被继承类重新定义，修饰的变量为常量，是不可修改的。</li>
+<li>abstract:用来创建抽象类和抽象方法。</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">SuperClass</span><span class="token punctuation">{</span>
+    <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">m</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//抽象方法</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SubClass</span> <span class="token keyword">extends</span> <span class="token class-name">SuperClass</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//实现抽象方法</span>
+    <span class="token keyword">void</span> <span class="token function">m</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>synchronized:用于线程的编程，声明的方法同一时间只能被一个线程访问，可以应用于四个访问修饰符。</li>
+<li>transient:序列化对象包含被transient修饰的实例变量时，java虚拟机跳过该特定的变量</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">transient</span> <span class="token keyword">int</span> limit <span class="token operator">=</span> <span class="token number">55</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//不会持久化</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> b<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//持久化</span></code></pre>
+<ul>
+<li>volatile:在每次被线程访问时，都强制从共享内存中重新读取该成员变量的值。</li>
+</ul>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><ul>
+<li>+、-、*、/、%、++、–</li>
+</ul>
+<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><ul>
+<li>==、！=、&gt;、&lt;、&gt;=、&lt;=</li>
+</ul>
+<h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><ul>
+<li>&amp;、|、^、~、&lt;&lt;、&gt;&gt;、&gt;&gt;&gt;</li>
+</ul>
+<pre><code>A = 0011 1100
+B = 0000 1101
+A &amp; B = 0000 1100
+A | B = 0011 1101
+A ^ B = 0011 0001
+~A = 1100 0011
+A &lt;&lt; 2 = 1111 0000
+A &gt;&gt; 2 = 0000 1111
+A &gt;&gt;&gt; 2 = 0000 1111 </code></pre><h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><ul>
+<li>&amp;&amp;、||、！</li>
+<li>短位逻辑运算符</li>
+<li>当使用与逻辑运算符时，在两个操作数都为true时，结果才为true，但是当得到第一个操作为false，这时候就不会再判断第二个操作了。</li>
+</ul>
+<h4 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h4><ul>
+<li>=、+=、-=、*=、/=、%=、&lt;&lt;=、&gt;&gt;=、&amp;=、^=、|=</li>
+</ul>
+<h4 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h4><ul>
+<li>也称为三元运算符。该运算符有3个操作数，并且需要判断布尔表达式的值。该运算符的主要是决定哪个值应该赋值给变量。</li>
+<li>variable x = (expression) ? value if true : value if false</li>
+</ul>
+<h4 id="instanceof运算符"><a href="#instanceof运算符" class="headerlink" title="instanceof运算符"></a>instanceof运算符</h4><ul>
+<li>该运算符用于操作对象实例，检查该对象是否是一个特定类型（类类型或接口类型）。</li>
+<li>( Object reference variable ) instanceof ( class/interface type )</li>
+</ul>
+<pre class=" language-java"><code class="language-java">String name <span class="token operator">=</span> <span class="token string">"James"</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> result <span class="token operator">=</span> name <span class="token keyword">instanceof</span> <span class="token class-name">String</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//由于name是String类型，所以返回真</span></code></pre>
+<h3 id="Number-amp-Math-类"><a href="#Number-amp-Math-类" class="headerlink" title="Number &amp; Math 类"></a>Number &amp; Math 类</h3><h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><ul>
+<li>Boolean、Byte、Short、Integer、Long、Character、Float、Double</li>
+<li>装箱：自动将基本数据类型转换为包装器类型</li>
+<li>拆箱：自动将包装器类型转换为基本数据类型</li>
+<li>Character 方法<ul>
+<li>isLetter()：是否是一个字母</li>
+<li>isDigit()：是否是一个数字字符</li>
+<li>isWhitespace()：是否是一个空白字符</li>
+<li>isUpperCase()：是否是大写字母</li>
+<li>isLowerCase()：是否是小写字母</li>
+<li>toUpperCase()：指定字母的大写形式</li>
+<li>toLowerCase()：指定字母的小写形式</li>
+<li>toString()：返回字符的字符串形式，字符串的长度仅为1</li>
+</ul>
+</li>
+</ul>
+<h4 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h4><ul>
+<li>包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数。</li>
+</ul>
+<h4 id="Number-amp-Math-类方法"><a href="#Number-amp-Math-类方法" class="headerlink" title="Number &amp; Math 类方法"></a>Number &amp; Math 类方法</h4><ul>
+<li>xxxValue():将 Number 对象转换为xxx数据类型的值并返回。</li>
+</ul>
+<pre class=" language-java"><code class="language-java">Integer x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token function">byteValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li><p>compareTo():将Number对象与参数比较。</p>
+<ul>
+<li><p>public int compareTo( NumberSubClass referenceName )</p>
+</li>
+<li><p>如果指定的数与参数相等返回0,小于返回 -1,大于返回 1。</p>
+<pre class=" language-java"><code class="language-java">Integer x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//返回-1</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//返回0</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//返回1</span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>equals():判断number对象是否与参数相等。</p>
+</li>
+<li><p>valueOf():返回一个 Number 对象指定的内置数据类型</p>
+</li>
+</ul>
+<pre class=" language-java"><code class="language-java">Integer x <span class="token operator">=</span>Integer<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Double c <span class="token operator">=</span> Double<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Float a <span class="token operator">=</span> Float<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token string">"80"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>toString():以字符串形式返回值。</li>
+<li>parseInt():将字符串解析为int类型。</li>
+<li>abs():返回参数的绝对值。</li>
+<li>ceil():返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。</li>
+<li>floor():返回小于等于（&lt;=）给定参数的最大整数 。</li>
+<li>rint():返回与参数最接近的整数。返回类型为double。</li>
+<li>round():它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。</li>
+<li>min():返回两个参数中的最小值。</li>
+<li>max():返回两个参数中的最大值。</li>
+<li>exp():返回自然数底数e的参数次方。</li>
+<li>log():返回参数的自然数底数的对数值。</li>
+<li>pow():返回第一个参数的第二个参数次方。</li>
+<li>sqrt():求参数的算术平方根。</li>
+<li>sin()、cos()、tan()、asin()、acos()、atan()：求指定double类型参数的正弦值、余弦值、正切值、反正弦值、反余弦值、反正切值。</li>
+<li>atan2()：将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。</li>
+<li>toDegrees()：将参数转化为角度。</li>
+<li>toRadians()：将角度转换为弧度。</li>
+<li>random()：返回一个随机数。</li>
+</ul>
+<h3 id="String-amp-StringBuffer-amp-StringBuilder类"><a href="#String-amp-StringBuffer-amp-StringBuilder类" class="headerlink" title="String &amp; StringBuffer &amp; StringBuilder类"></a>String &amp; StringBuffer &amp; StringBuilder类</h3><h4 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h4><h5 id="创建字符串"><a href="#创建字符串" class="headerlink" title="创建字符串"></a>创建字符串</h5><pre class=" language-java"><code class="language-java">String greeting <span class="token operator">=</span> <span class="token string">"字符串"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> helloArray <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">,</span> <span class="token string">'e'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+String helloString <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>helloArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span> helloString <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//abcde</span></code></pre>
+<h5 id="字符串长度"><a href="#字符串长度" class="headerlink" title="字符串长度"></a>字符串长度</h5><ul>
+<li>length():返回字符串对象包含的字符数</li>
+</ul>
+<pre class=" language-java"><code class="language-java">String greeting <span class="token operator">=</span> <span class="token string">"字符串"</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span> greeting<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//3</span></code></pre>
+<h5 id="连接字符串"><a href="#连接字符串" class="headerlink" title="连接字符串"></a>连接字符串</h5><ul>
+<li>concat():连接两个字符串</li>
+<li>string1.concat(string2);</li>
+</ul>
+<h5 id="创建格式化字符串"><a href="#创建格式化字符串" class="headerlink" title="创建格式化字符串"></a>创建格式化字符串</h5><pre class=" language-java"><code class="language-java">System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"浮点型变量的值为 %f, 整型变量的值为 %d, 字符串变量的值为 %s"</span><span class="token punctuation">,</span> floatVar<span class="token punctuation">,</span> intVar<span class="token punctuation">,</span> stringVar<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-java"><code class="language-java">String fs<span class="token punctuation">;</span>
+fs <span class="token operator">=</span> String<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"浮点型变量的值为 %f, 整型变量的值为 %d, 字符串变量的值为 %s"</span><span class="token punctuation">,</span> floatVar<span class="token punctuation">,</span> intVar<span class="token punctuation">,</span> stringVar<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h5 id="String-方法"><a href="#String-方法" class="headerlink" title="String 方法"></a>String 方法</h5><ul>
+<li><p>charAt():返回指定索引处的 char 值。索引范围为从 0 到 length() - 1。</p>
+<ul>
+<li>public char charAt(int index)</li>
+</ul>
+</li>
+<li><p>compareTo():把这个字符串和另一个对象比较。</p>
+</li>
+<li><p>concat():将指定字符串连接到此字符串的结尾。</p>
+</li>
+<li><p>copyValueOf():返回指定数组中表示该字符序列的 String。</p>
+</li>
+<li><p>endsWith():测试此字符串是否以指定的后缀结束。</p>
+</li>
+<li><p>equals():将此字符串与指定的对象比较。</p>
+</li>
+<li><p>getChars():将字符从此字符串复制到目标字符数组。</p>
+</li>
+<li><p>hashCode():返回此字符串的哈希码。</p>
+</li>
+<li><p>indexOf():返回指定字符在此字符串中第一次出现处的索引。</p>
+</li>
+<li><p>lastIndexOf():返回指定字符在此字符串中最后一次出现处的索引。</p>
+</li>
+<li><p>length():返回此字符串的长度。</p>
+</li>
+<li><p>replace():返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。</p>
+</li>
+<li><p>split():根据给定正则表达式的匹配拆分此字符串。</p>
+</li>
+<li><p>startsWith():测试此字符串是否以指定的前缀开始。</p>
+</li>
+<li><p>subString():返回一个新的字符串，它是此字符串的一个子字符串。</p>
+</li>
+<li><p>toCharArray():将此字符串转换为一个新的字符数组。</p>
+</li>
+<li><p>toLowerCase():使用默认语言环境的规则将此 String 中的所有字符都转换为小写。</p>
+</li>
+<li><p>toString(): 返回此对象本身。</p>
+</li>
+<li><p>toUpperCase():使用默认语言环境的规则将此 String 中的所有字符都转换为大写。</p>
+</li>
+<li><p>trim()：返回字符串的副本，忽略前导空白和尾部空白。</p>
+</li>
+</ul>
+<h4 id="StringBuffer-和-StringBuilder-类"><a href="#StringBuffer-和-StringBuilder-类" class="headerlink" title="StringBuffer 和 StringBuilder 类"></a>StringBuffer 和 StringBuilder 类</h4><ul>
+<li>当对字符串进行修改的时候，需要使用 StringBuffer 和 StringBuilder 类。</li>
+<li>StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用 StringBuilder 类。</li>
+<li>StringBuilder 的方法不是线程安全的（不能同步访问），在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</li>
+</ul>
+<h5 id="StringBuffer-方法"><a href="#StringBuffer-方法" class="headerlink" title="StringBuffer 方法"></a>StringBuffer 方法</h5><ul>
+<li><p>public StringBuffer append(String s)：将指定的字符串追加到此字符序列。</p>
+</li>
+<li><p>public StringBuffer reverse()： 将此字符序列用其反转形式取代。</p>
+</li>
+<li><p>public delete(int start, int end)：移除此序列的子字符串中的字符。</p>
+</li>
+<li><p>public insert(int offset, int i)：将 int 参数的字符串表示形式插入此序列中。</p>
+</li>
+<li><p>replace(int start, int end, String str)：使用给定 String 中的字符替换此序列的子字符串中的字符。</p>
+</li>
+</ul>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h4 id="声明数组变量"><a href="#声明数组变量" class="headerlink" title="声明数组变量"></a>声明数组变量</h4><ul>
+<li><p>dataType[] arrayRefVar;</p>
+</li>
+<li><p>dataType arrayRefVar[]; </p>
+</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">double</span><span class="token punctuation">[</span><span class="token punctuation">]</span> myList<span class="token punctuation">;</span>
+
+<span class="token keyword">double</span> myList<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<h4 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h4><ul>
+<li>arrayRefVar = new dataType[arraySize];</li>
+<li>数组变量的声明，和创建数组可以用一条语句完成:<ul>
+<li>dataType[] arrayRefVar = new dataType[arraySize];</li>
+<li>dataType[] arrayRefVar = {value0, value1, …, valuek};</li>
+</ul>
+</li>
+</ul>
+<h4 id="For-Each-循环"><a href="#For-Each-循环" class="headerlink" title="For-Each 循环"></a>For-Each 循环</h4><pre><code>for(type element: array)
+{
+    System.out.println(element);
+}</code></pre><h4 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h4><h5 id="多维数组的动态初始化（以二维数组为例）"><a href="#多维数组的动态初始化（以二维数组为例）" class="headerlink" title="多维数组的动态初始化（以二维数组为例）"></a>多维数组的动态初始化（以二维数组为例）</h5><ul>
+<li>type[][] typeName = new type[typeLength1][typeLength2];</li>
+</ul>
+<h5 id="多维数组的引用（以二维数组为例）"><a href="#多维数组的引用（以二维数组为例）" class="headerlink" title="多维数组的引用（以二维数组为例）"></a>多维数组的引用（以二维数组为例）</h5><ul>
+<li>arrayName[index1][index2]</li>
+</ul>
+<h4 id="Arrays-类"><a href="#Arrays-类" class="headerlink" title="Arrays 类"></a>Arrays 类</h4><ul>
+<li>public static int binarySearch(Object[] a, Object key)<ul>
+<li>用二分查找算法在给定数组中搜索给定值的对象(Byte,Int,double等)。数组在调用前必须排序好的。如果查找值包含在数组中，则返回搜索键的索引；否则返回 (-(插入点) - 1)。</li>
+</ul>
+</li>
+<li>public static boolean equals(long[] a, long[] a2)<ul>
+<li>如果两个指定的 long 型数组彼此相等，则返回 true。如果两个数组包含相同数量的元素，并且两个数组中的所有相应元素对都是相等的，则认为这两个数组是相等的。换句话说，如果两个数组以相同顺序包含相同的元素，则两个数组是相等的。同样的方法适用于所有的其他基本数据类型（Byte，short，Int等）。</li>
+</ul>
+</li>
+<li>public static void fill(int[] a, int val)<ul>
+<li>将指定的 int 值分配给指定 int 型数组指定范围中的每个元素。同样的方法适用于所有的其他基本数据类型（Byte，short，Int等）</li>
+</ul>
+</li>
+<li>public static void sort(Object[] a)<ul>
+<li>对指定对象数组根据其元素的自然顺序进行升序排列。同样的方法适用于所有的其他基本数据类型（Byte，short，Int等）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="日期时间"><a href="#日期时间" class="headerlink" title="日期时间"></a>日期时间</h3><h4 id="Date-类的两个构造函数"><a href="#Date-类的两个构造函数" class="headerlink" title="Date 类的两个构造函数"></a>Date 类的两个构造函数</h4><ul>
+<li>Date( )</li>
+<li>Date(long millisec)</li>
+</ul>
+<h4 id="Date-类方法"><a href="#Date-类方法" class="headerlink" title="Date 类方法"></a>Date 类方法</h4><ul>
+<li>boolean after(Date date)<ul>
+<li>若当调用此方法的Date对象在指定日期之后返回true,否则返回false。</li>
+</ul>
+</li>
+<li>boolean before(Date date)<ul>
+<li>若当调用此方法的Date对象在指定日期之前返回true,否则返回false。</li>
+</ul>
+</li>
+<li>Object clone( )<ul>
+<li>返回此对象的副本。</li>
+</ul>
+</li>
+<li>int compareTo(Date date)<ul>
+<li>比较当调用此方法的Date对象和指定日期。两者相等时候返回0。调用对象在指定日期之前则返回负数。调用对象在指定日期之后则返回正数。</li>
+</ul>
+</li>
+<li>boolean equals(Object date)<ul>
+<li>当调用此方法的Date对象和指定日期相等时候返回true,否则返回false。</li>
+</ul>
+</li>
+<li>long getTime( )<ul>
+<li>返回自 1970 年 1 月 1 日 00:00:00 GMT 以来此 Date 对象表示的毫秒数。</li>
+</ul>
+</li>
+<li>int hashCode( )<ul>
+<li>返回此对象的哈希码值。</li>
+</ul>
+</li>
+<li>void setTime(long time)<ul>
+<li>用自1970年1月1日00:00:00 GMT以后time毫秒数设置时间和日期。</li>
+</ul>
+</li>
+<li>String toString( )<ul>
+<li>把此 Date 对象转换为以下形式的 String： dow mon dd hh:mm:ss zzz yyyy 其中： dow 是一周中的某一天 (Sun, Mon, Tue, Wed, Thu, Fri, Sat)。</li>
+</ul>
+</li>
+</ul>
+<h4 id="获取当前日期时间"><a href="#获取当前日期时间" class="headerlink" title="获取当前日期时间"></a>获取当前日期时间</h4><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 初始化 Date 对象</span>
+Date date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 使用 toString() 函数显示日期时间</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4 id="使用-SimpleDateFormat-格式化日期"><a href="#使用-SimpleDateFormat-格式化日期" class="headerlink" title="使用 SimpleDateFormat 格式化日期"></a>使用 SimpleDateFormat 格式化日期</h4><ul>
+<li>SimpleDateFormat ft = new SimpleDateFormat (“yyyy-MM-dd hh:mm:ss”);</li>
+</ul>
+<pre class=" language-java"><code class="language-java">Date dNow <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+SimpleDateFormat ft <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SimpleDateFormat</span> <span class="token punctuation">(</span><span class="token string">"yyyy-MM-dd hh:mm:ss"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"当前时间为: "</span> <span class="token operator">+</span> ft<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span>dNow<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4 id="休眠sleep"><a href="#休眠sleep" class="headerlink" title="休眠sleep"></a>休眠sleep</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span> 
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span> <span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// 休眠3秒</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span> <span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Got an exception!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span></code></pre>
+<h4 id="Calendar类"><a href="#Calendar类" class="headerlink" title="Calendar类"></a>Calendar类</h4><h5 id="创建一个代表系统当前日期的Calendar对象"><a href="#创建一个代表系统当前日期的Calendar对象" class="headerlink" title="创建一个代表系统当前日期的Calendar对象"></a>创建一个代表系统当前日期的Calendar对象</h5><ul>
+<li>Calendar c = Calendar.getInstance();//默认是当前日期</li>
+</ul>
+<h5 id="创建一个指定日期的Calendar对象"><a href="#创建一个指定日期的Calendar对象" class="headerlink" title="创建一个指定日期的Calendar对象"></a>创建一个指定日期的Calendar对象</h5><ul>
+<li>public final void set(int year,int month,int date)</li>
+</ul>
+<h5 id="Add设置"><a href="#Add设置" class="headerlink" title="Add设置"></a>Add设置</h5><pre class=" language-java"><code class="language-java">Calendar c1 <span class="token operator">=</span> Calendar<span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+c1<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>DATE<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//把c1对象的日期加上10</span>
+c1<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>DATE<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//把c1对象的日期减去10</span></code></pre>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="异常方法"><a href="#异常方法" class="headerlink" title="异常方法"></a>异常方法</h4><ul>
+<li>public String getMessage()<ul>
+<li>返回关于发生的异常的详细信息。</li>
+</ul>
+</li>
+<li>public Throwable getCause()<ul>
+<li>返回一个Throwable 对象代表异常原因。</li>
+</ul>
+</li>
+<li>public String toString()<ul>
+<li>使用getMessage()的结果返回类的串级名字。</li>
+</ul>
+</li>
+<li>public void printStackTrace()<ul>
+<li>打印toString()结果和栈层次到System.err，即错误输出流。</li>
+</ul>
+</li>
+<li>public StackTraceElement [] getStackTrace()<ul>
+<li>返回一个包含堆栈层次的数组。</li>
+</ul>
+</li>
+<li>public Throwable fillInStackTrace()<ul>
+<li>用当前的调用栈层次填充Throwable 对象栈层次，添加到栈层次任何先前信息中。</li>
+</ul>
+</li>
+</ul>
+<h4 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h4><ul>
+<li>使用 try 和 catch 关键字可以捕获异常。try/catch 代码块放在异常可能发生的地方。</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">try</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//程序代码</span>
+<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>ExceptionName e1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//Catch 块</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="多重捕获块"><a href="#多重捕获块" class="headerlink" title="多重捕获块"></a>多重捕获块</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">try</span><span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true">// 程序代码</span>
+<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>异常类型<span class="token number">1</span> 异常的变量名<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 程序代码</span>
+<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>异常类型<span class="token number">2</span> 异常的变量名<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 程序代码</span>
+<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>异常类型<span class="token number">2</span> 异常的变量名<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 程序代码</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="throws-throw-关键字："><a href="#throws-throw-关键字：" class="headerlink" title="throws/throw 关键字："></a>throws/throw 关键字：</h4><ul>
+<li>如果一个方法没有捕获到一个检查性异常，那么该方法必须使用 throws 关键字来声明。</li>
+</ul>
+<h4 id="finally关键字"><a href="#finally关键字" class="headerlink" title="finally关键字"></a>finally关键字</h4><ul>
+<li>finally 关键字用来创建在 try 代码块后面执行的代码块。</li>
+<li>无论是否发生异常，finally 代码块中的代码总会被执行。</li>
+</ul>
+<h4 id="声明自定义异常"><a href="#声明自定义异常" class="headerlink" title="声明自定义异常"></a>声明自定义异常</h4><ul>
+<li>所有异常都必须是 Throwable 的子类。</li>
+<li>如果希望写一个检查性异常类，则需要继承 Exception 类。</li>
+<li>如果你想写一个运行时异常类，那么需要继承 RuntimeException 类。</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">MyException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span><span class="token punctuation">{</span>
+<span class="token punctuation">}</span></code></pre>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">zhiwe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zhiwe.github.io/2020/07/10/java-basis/">https://zhiwe.github.io/2020/07/10/java-basis/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">zhiwe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/07/10/java-basis/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="java语言基础">
+                        
+                        <span class="card-title">java语言基础</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+对于java的一些笔记
+
+java基础数据类型内置数据类型
+整数类型(byte、short、int、long)
+浮点类型(float、double)
+布尔类型(boolean)
+字符类型(char)
+
+
+
+
+类型
+类型名称
+占用内存
+取值
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    编程基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/07/08/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhiwe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">zhiwe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">3.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "7";
+                    var startDate = "08";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+    
+
+</body>
+
+</html>
