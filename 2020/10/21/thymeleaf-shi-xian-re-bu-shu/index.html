@@ -470,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    203
+                    210
                 </div>
                 
 
@@ -495,14 +495,22 @@
                 <blockquote>
 <p>不用每次都重启服务器就能看见Thymeleaf模块的改动</p>
 </blockquote>
-<h3 id="1-通过添加spring-boot-devtools依赖实现热部署"><a href="#1-通过添加spring-boot-devtools依赖实现热部署" class="headerlink" title="1.通过添加spring-boot-devtools依赖实现热部署"></a>1.通过添加spring-boot-devtools依赖实现热部署</h3><pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+<h3 id="1-方法一：通过添加spring-boot-devtools依赖实现热部署"><a href="#1-方法一：通过添加spring-boot-devtools依赖实现热部署" class="headerlink" title="1.方法一：通过添加spring-boot-devtools依赖实现热部署"></a>1.方法一：通过添加spring-boot-devtools依赖实现热部署</h3><pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>spring-boot-devtools<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>scope</span><span class="token punctuation">></span></span>runtime<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>scope</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>optional</span><span class="token punctuation">></span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>optional</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre>
-<h3 id="2-通过修改IEDA配置实现热部署"><a href="#2-通过修改IEDA配置实现热部署" class="headerlink" title="2.通过修改IEDA配置实现热部署"></a>2.通过修改IEDA配置实现热部署</h3><h4 id="2-1-修改配置"><a href="#2-1-修改配置" class="headerlink" title="2.1 修改配置"></a>2.1 修改配置</h4><h5 id="1-File-Settings-Build-Execution-Deployment-Compiler"><a href="#1-File-Settings-Build-Execution-Deployment-Compiler" class="headerlink" title="1.File | Settings | Build, Execution, Deployment | Compiler"></a>1.File | Settings | Build, Execution, Deployment | Compiler</h5><h5 id="2-将Build-project-automatically-勾上"><a href="#2-将Build-project-automatically-勾上" class="headerlink" title="2.将Build project automatically 勾上"></a>2.将Build project automatically 勾上</h5><h4 id="2-2-修改registry"><a href="#2-2-修改registry" class="headerlink" title="2.2 修改registry"></a>2.2 修改registry</h4><h5 id="1-按住Ctrl-Shift-Alt"><a href="#1-按住Ctrl-Shift-Alt" class="headerlink" title="1. 按住Ctrl+Shift+Alt+/"></a>1. 按住Ctrl+Shift+Alt+/</h5><h5 id="2-点击registry"><a href="#2-点击registry" class="headerlink" title="2. 点击registry"></a>2. 点击registry</h5><h5 id="3-将compiler-automake-allow-when-app-running勾上"><a href="#3-将compiler-automake-allow-when-app-running勾上" class="headerlink" title="3. 将compiler.automake.allow.when.app.running勾上"></a>3. 将compiler.automake.allow.when.app.running勾上</h5><h4 id="2-3-配置application-properties"><a href="#2-3-配置application-properties" class="headerlink" title="2.3 配置application.properties"></a>2.3 配置application.properties</h4><pre class=" language-properties"><code class="language-properties"><span class="token attr-name">spring.thymeleaf.cache</span><span class="token punctuation">=</span><span class="token attr-value">false</span></code></pre>
-<h3 id="3-设置完成后"><a href="#3-设置完成后" class="headerlink" title="3.设置完成后"></a>3.设置完成后</h3><h4 id="启动服务器，在改动后的Thymeleaf模块界面按下-Ctrl-Shift-F9"><a href="#启动服务器，在改动后的Thymeleaf模块界面按下-Ctrl-Shift-F9" class="headerlink" title="启动服务器，在改动后的Thymeleaf模块界面按下 Ctrl+Shift+F9"></a>启动服务器，在改动后的Thymeleaf模块界面按下 Ctrl+Shift+F9</h4><script>
+<h3 id="2-方法二：通过修改IEDA配置实现热部署"><a href="#2-方法二：通过修改IEDA配置实现热部署" class="headerlink" title="2.方法二：通过修改IEDA配置实现热部署"></a>2.方法二：通过修改IEDA配置实现热部署</h3><h4 id="2-1-修改配置"><a href="#2-1-修改配置" class="headerlink" title="2.1 修改配置"></a>2.1 修改配置</h4><p>1.File | Settings | Build, Execution, Deployment | Compiler</p>
+<p>2.将Build project automatically 勾上</p>
+<h4 id="2-2-修改registry"><a href="#2-2-修改registry" class="headerlink" title="2.2 修改registry"></a>2.2 修改registry</h4><ol>
+<li>按住Ctrl+Shift+Alt+/</li>
+<li>点击registry</li>
+<li>将compiler.automake.allow.when.app.running勾上</li>
+</ol>
+<h4 id="2-3-配置application-properties"><a href="#2-3-配置application-properties" class="headerlink" title="2.3 配置application.properties"></a>2.3 配置application.properties</h4><pre class=" language-properties"><code class="language-properties"><span class="token attr-name">spring.thymeleaf.cache</span><span class="token punctuation">=</span><span class="token attr-value">false</span></code></pre>
+<h3 id="3-设置完成后"><a href="#3-设置完成后" class="headerlink" title="3.设置完成后"></a>3.设置完成后</h3><p>启动服务器，在改动后的Thymeleaf模块界面按下 Ctrl+Shift+F9</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -646,8 +654,8 @@
                             
 不用每次都重启服务器就能看见Thymeleaf模块的改动
 
-1.通过添加spring-boot-devtools依赖实现热部署&lt;dependency>
-    &lt;groupId>org.springframework.boot
+1.方法一：通过添加spring-boot-devtools依赖实现热部署&lt;dependency>
+    &lt;groupId>org.springframework.
                         
                     </div>
                     <div class="publish-info">
@@ -878,7 +886,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.8k</span>&nbsp;字
+                class="white-color">4.9k</span>&nbsp;字
             
             
             

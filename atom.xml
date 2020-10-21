@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwe.github.io/"/>
-  <updated>2020-10-20T17:35:58.418Z</updated>
+  <updated>2020-10-21T01:22:45.552Z</updated>
   <id>https://zhiwe.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhiwe.github.io/2020/10/21/thymeleaf-shi-xian-re-bu-shu/"/>
     <id>https://zhiwe.github.io/2020/10/21/thymeleaf-shi-xian-re-bu-shu/</id>
     <published>2020-10-20T17:12:18.000Z</published>
-    <updated>2020-10-20T17:35:58.418Z</updated>
+    <updated>2020-10-21T01:22:45.552Z</updated>
     
     <summary type="html">
     
@@ -32,7 +32,7 @@
           &lt;blockquote&gt;
 &lt;p&gt;不用每次都重启服务器就能看见Thymeleaf模块的改动&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;1-通过添加spring-boot-devtools依赖实现热部署&quot;&gt;&lt;a
+&lt;h3 id=&quot;1-方法一：通过添加spring-boot-devtools依赖实现热部署&quot;&gt;&lt;a
         
       
     
