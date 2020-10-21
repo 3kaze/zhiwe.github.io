@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiwe.github.io/"/>
-  <updated>2020-09-06T16:56:34.062Z</updated>
+  <updated>2020-10-20T17:35:58.418Z</updated>
   <id>https://zhiwe.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Thymeleaf实现热部署</title>
+    <link href="https://zhiwe.github.io/2020/10/21/thymeleaf-shi-xian-re-bu-shu/"/>
+    <id>https://zhiwe.github.io/2020/10/21/thymeleaf-shi-xian-re-bu-shu/</id>
+    <published>2020-10-20T17:12:18.000Z</published>
+    <updated>2020-10-20T17:35:58.418Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;不用每次都重启服务器就能看见Thymeleaf模块的改动&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1-通过添加spring-boot-devtools依赖实现热部署&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Thymeleaf" scheme="https://zhiwe.github.io/categories/Thymeleaf/"/>
+    
+    
+      <category term="Thymeleaf" scheme="https://zhiwe.github.io/tags/Thymeleaf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringMVC应用表单验证</title>
+    <link href="https://zhiwe.github.io/2020/10/16/springmvc-biao-dan-yan-zheng/"/>
+    <id>https://zhiwe.github.io/2020/10/16/springmvc-biao-dan-yan-zheng/</id>
+    <published>2020-10-16T00:13:40.000Z</published>
+    <updated>2020-10-20T17:09:51.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;Spring+Thymeleaf校验表单输入&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1-添加validation-api、hibernate-validator依赖到项目中&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring" scheme="https://zhiwe.github.io/categories/Spring/"/>
+    
+    
+      <category term="表单验证" scheme="https://zhiwe.github.io/tags/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/"/>
+    
+  </entry>
   
   <entry>
     <title>通过Git推送本地代码到GitHub仓库</title>

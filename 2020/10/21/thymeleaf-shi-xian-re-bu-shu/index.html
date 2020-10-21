@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, java, python">
+    <meta name="keywords" content="Thymeleaf实现热部署, java, python">
     <meta name="description" content="zhiweの博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Zhiweの博客</title>
+    <title>Thymeleaf实现热部署 | Zhiweの博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/fairy-tail-icons.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -314,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Thymeleaf实现热部署</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Thymeleaf/">
+                                <span class="chip bg-color">Thymeleaf</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Thymeleaf/" class="post-category">
+                                Thymeleaf
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -448,7 +461,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-08
+                    2020-10-21
                 </div>
                 
 
@@ -457,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    149
+                    203
                 </div>
                 
 
@@ -479,16 +492,17 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="新建草稿"><a href="#新建草稿" class="headerlink" title="新建草稿"></a>新建草稿</h3><pre><code>$ hexo new draft newdraft</code></pre><h3 id="草稿预览"><a href="#草稿预览" class="headerlink" title="草稿预览"></a>草稿预览</h3><pre><code>$ hexo server --draft</code></pre><h3 id="草稿发表到post"><a href="#草稿发表到post" class="headerlink" title="草稿发表到post"></a>草稿发表到post</h3><pre><code>$ hexo publish draft newdraft</code></pre><script>
+                <blockquote>
+<p>不用每次都重启服务器就能看见Thymeleaf模块的改动</p>
+</blockquote>
+<h3 id="1-通过添加spring-boot-devtools依赖实现热部署"><a href="#1-通过添加spring-boot-devtools依赖实现热部署" class="headerlink" title="1.通过添加spring-boot-devtools依赖实现热部署"></a>1.通过添加spring-boot-devtools依赖实现热部署</h3><pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>spring-boot-devtools<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>scope</span><span class="token punctuation">></span></span>runtime<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>scope</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>optional</span><span class="token punctuation">></span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>optional</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="2-通过修改IEDA配置实现热部署"><a href="#2-通过修改IEDA配置实现热部署" class="headerlink" title="2.通过修改IEDA配置实现热部署"></a>2.通过修改IEDA配置实现热部署</h3><h4 id="2-1-修改配置"><a href="#2-1-修改配置" class="headerlink" title="2.1 修改配置"></a>2.1 修改配置</h4><h5 id="1-File-Settings-Build-Execution-Deployment-Compiler"><a href="#1-File-Settings-Build-Execution-Deployment-Compiler" class="headerlink" title="1.File | Settings | Build, Execution, Deployment | Compiler"></a>1.File | Settings | Build, Execution, Deployment | Compiler</h5><h5 id="2-将Build-project-automatically-勾上"><a href="#2-将Build-project-automatically-勾上" class="headerlink" title="2.将Build project automatically 勾上"></a>2.将Build project automatically 勾上</h5><h4 id="2-2-修改registry"><a href="#2-2-修改registry" class="headerlink" title="2.2 修改registry"></a>2.2 修改registry</h4><h5 id="1-按住Ctrl-Shift-Alt"><a href="#1-按住Ctrl-Shift-Alt" class="headerlink" title="1. 按住Ctrl+Shift+Alt+/"></a>1. 按住Ctrl+Shift+Alt+/</h5><h5 id="2-点击registry"><a href="#2-点击registry" class="headerlink" title="2. 点击registry"></a>2. 点击registry</h5><h5 id="3-将compiler-automake-allow-when-app-running勾上"><a href="#3-将compiler-automake-allow-when-app-running勾上" class="headerlink" title="3. 将compiler.automake.allow.when.app.running勾上"></a>3. 将compiler.automake.allow.when.app.running勾上</h5><h4 id="2-3-配置application-properties"><a href="#2-3-配置application-properties" class="headerlink" title="2.3 配置application.properties"></a>2.3 配置application.properties</h4><pre class=" language-properties"><code class="language-properties"><span class="token attr-name">spring.thymeleaf.cache</span><span class="token punctuation">=</span><span class="token attr-value">false</span></code></pre>
+<h3 id="3-设置完成后"><a href="#3-设置完成后" class="headerlink" title="3.设置完成后"></a>3.设置完成后</h3><h4 id="启动服务器，在改动后的Thymeleaf模块界面按下-Ctrl-Shift-F9"><a href="#启动服务器，在改动后的Thymeleaf模块界面按下-Ctrl-Shift-F9" class="headerlink" title="启动服务器，在改动后的Thymeleaf模块界面按下 Ctrl+Shift+F9"></a>启动服务器，在改动后的Thymeleaf模块界面按下 Ctrl+Shift+F9</h4><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -531,7 +545,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhiwe.github.io/2020/07/08/hello-world/">https://zhiwe.github.io/2020/07/08/hello-world/</a>
+                    <a href="https://zhiwe.github.io/2020/10/21/thymeleaf-shi-xian-re-bu-shu/">https://zhiwe.github.io/2020/10/21/thymeleaf-shi-xian-re-bu-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,7 +582,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Thymeleaf/">
+                                    <span class="chip bg-color">Thymeleaf</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -608,61 +626,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/10/java-bi-ji/">
+                <a href="/2020/10/21/thymeleaf-shi-xian-re-bu-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="java笔记">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Thymeleaf实现热部署">
                         
-                        <span class="card-title">java笔记</span>
+                        <span class="card-title">Thymeleaf实现热部署</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-对于java的一些笔记
+不用每次都重启服务器就能看见Thymeleaf模块的改动
 
-java基础数据类型内置数据类型
-整数类型(byte、short、int、long)
-浮点类型(float、double)
-布尔类型(boolean)
-字符类型(char)
-
-
-
-
-类型
-类型名称
-占用内存
-取值
+1.通过添加spring-boot-devtools依赖实现热部署&lt;dependency>
+    &lt;groupId>org.springframework.boot
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
+                            <a href="/categories/Thymeleaf/" class="post-category">
+                                    Thymeleaf
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/java/">
-                        <span class="chip bg-color">java</span>
+                    <a href="/tags/Thymeleaf/">
+                        <span class="chip bg-color">Thymeleaf</span>
                     </a>
                     
                 </div>
@@ -673,37 +682,52 @@ java基础数据类型内置数据类型
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/08/hello-world/">
+                <a href="/2020/10/16/springmvc-biao-dan-yan-zheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SpringMVC应用表单验证">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">SpringMVC应用表单验证</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+Spring+Thymeleaf校验表单输入
+
+1.添加validation-api、hibernate-validator依赖到项目中    &lt;dependency>
+        &lt;groupId>org.hiberna
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            zhiwe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Spring/" class="post-category">
+                                    Spring
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/">
+                        <span class="chip bg-color">表单验证</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
